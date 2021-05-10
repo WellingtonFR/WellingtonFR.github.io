@@ -1,5 +1,5 @@
 body {
-  background-color: #666;
+  background-color: #222c30 !important;
 }
 
 .container-fluid {
@@ -7,15 +7,15 @@ body {
 }
 
 header {
-  height: 400px;
-  background: rgb(35, 45, 49);
+  background: #222c30;
   background: radial-gradient(
     circle,
     rgba(35, 45, 49, 1) 0%,
     rgba(25, 27, 26, 1) 100%
   );
   padding: 20px;
-  padding-top: 100px;
+  padding-top: 50px;
+  border-bottom: 1px solid #37464d;
 }
 
 .header-text {
@@ -30,6 +30,16 @@ header {
 
 .header-text-small {
   font-size: 22px;
+}
+
+#header-image {
+  width: 150px;
+  height: 150px;
+  background-color: #418aac;
+  margin: 0px auto;
+  margin-top: 40px;
+  border-radius: 75px;
+  border: 1px solid #1492cc;
 }
 
 nav {
