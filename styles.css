@@ -86,8 +86,13 @@ nav ul li a:hover {
   border-bottom: 2px solid #37464d;
 }
 
-#knowledge {
+#knowledge,
+#projects,
+#about {
   padding-top: 80px;
+}
+
+#about {
   height: 1000px;
 }
 
@@ -103,4 +108,17 @@ nav ul li a:hover {
   height: 150px;
   margin: 40px 70px;
   border-radius: 75px;
+}
+
+#projects .card-title {
+  text-align: center;
+}
+
+#projects .card-body {
+  text-align: justify;
+}
+
+.about-content {
+  color: #fff;
+  text-align: center;
 }
