@@ -6,7 +6,8 @@ body {
   padding: 0px !important;
 }
 
-header {
+.header-top {
+  height: 800px;
   background: #222c30;
   background: radial-gradient(
     circle,
@@ -14,7 +15,8 @@ header {
     rgba(25, 27, 26, 1) 100%
   );
   padding: 20px;
-  padding-top: 50px;
+  padding-top: 80px;
+  margin-top: 50px;
   border-bottom: 1px solid #37464d;
 }
 
@@ -33,12 +35,12 @@ header {
 }
 
 #header-image {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: #418aac;
   margin: 0px auto;
-  margin-top: 40px;
-  border-radius: 75px;
+  margin-top: 60px;
+  border-radius: 100px;
   border: 1px solid #1492cc;
 }
 
@@ -67,4 +69,38 @@ nav ul li a {
 
 nav ul li a:hover {
   color: rgb(100, 208, 255);
+}
+
+.section-header {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  width: 300px;
+  height: 60px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-bottom: 2px solid #37464d;
+}
+
+#knowledge {
+  padding-top: 80px;
+  height: 1000px;
+}
+
+.flex-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-knowledge {
+  height: 150px;
+  margin: 40px 70px;
+  border-radius: 75px;
 }
