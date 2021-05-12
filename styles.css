@@ -74,7 +74,13 @@ nav ul li a:hover {
   color: rgb(100, 208, 255) !important;
 }
 
+section {
+  padding-top: 80px;
+}
+
 .section-header {
+  width: 80%;
+  margin: 0px auto;
   color: #fff;
   text-align: center;
   margin-bottom: 20px;
@@ -87,49 +93,22 @@ nav ul li a:hover {
   border-bottom: 2px solid #37464d;
 }
 
-.section-description {
-  width: 50%;
-  margin: 0px auto;
-}
-
-#knowledge,
-#projects,
 #about {
-  padding-top: 80px;
-  width: 80%;
-  margin: 0px auto;
+  height: 1000px;
 }
 
-#about {
-  height: 800px;
-}
-
-@media screen and (min-width: 1025px) {
-  #knowledge,
-  #projects,
-  #about {
-    height: 1000px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .image-knowledge {
-    margin: 40px 10px;
-  }
-}
-
-.flex-section {
+.section-flex-content {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .image-knowledge {
   height: 150px;
-  margin: 40px 70px;
   border-radius: 75px;
+  margin: 20px 20px !important;
 }
 
 #projects .card-title {
@@ -141,8 +120,20 @@ nav ul li a:hover {
 }
 
 .about-content {
-  width: 500px;
+  width: 60%;
   margin: 0px auto;
   color: #fff;
   text-align: justify;
+}
+
+@media only screen and (min-width: 1025px) {
+  section {
+    height: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-content {
+    width: 90%;
+  }
 }
