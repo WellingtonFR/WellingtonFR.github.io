@@ -26,11 +26,11 @@ body {
 }
 
 .header-text-large {
-  font-size: 5rem;
+  font-size: 35px;
 }
 
 .header-text-small {
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 
 #header-image {
@@ -93,6 +93,10 @@ section {
   border-bottom: 2px solid #37464d;
 }
 
+.section-description {
+  text-align: center;
+}
+
 #about {
   height: 1000px;
 }
@@ -119,21 +123,51 @@ section {
   text-align: justify;
 }
 
-.about-content {
+.section-content {
   width: 60%;
   margin: 0px auto;
   color: #fff;
   text-align: justify;
 }
 
+.modal-body {
+  padding: 0px !important;
+}
+
+.contact-image {
+  width: 75px;
+  height: 75px;
+  border-radius: 40px;
+  margin: 40px 10px;
+}
+
 @media only screen and (min-width: 1025px) {
+  
   section {
     height: 1000px;
+  }
+
+  .section-flex-content {
+    width: 60%;
+    margin: 0px auto;
+  }
+
+  .header-text-large {
+    font-size: 100px;
+  }
+  
+  .header-text-small {
+    font-size: 30px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .about-content {
+  
+  .section-content {
     width: 90%;
+  }
+
+  nav{
+    font-size: 16px;
   }
 }
