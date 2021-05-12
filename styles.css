@@ -7,7 +7,7 @@ body {
 }
 
 .header-top {
-  height: 800px;
+  height: 1000px;
   background: #222c30;
   background: radial-gradient(
     circle,
@@ -15,8 +15,7 @@ body {
     rgba(25, 27, 26, 1) 100%
   );
   padding: 20px;
-  padding-top: 80px;
-  margin-top: 50px;
+  padding-top: 100px;
   border-bottom: 1px solid #37464d;
 }
 
@@ -27,24 +26,27 @@ body {
 }
 
 .header-text-large {
-  font-size: 80px;
+  font-size: 5rem;
 }
 
 .header-text-small {
-  font-size: 22px;
+  font-size: 1.5rem;
 }
 
 #header-image {
   width: 200px;
   height: 200px;
+  background-image: url("imagens/myAvatar.png");
   background-color: #418aac;
   margin: 0px auto;
   margin-top: 60px;
   border-radius: 100px;
-  border: 1px solid #1492cc;
+  border: 2px solid #1492cc;
 }
 
 nav {
+  position: fixed;
+  top: 0px;
   width: 100%;
   height: 50px;
   line-height: 50px;
@@ -53,6 +55,7 @@ nav {
   list-style-type: none;
   text-align: center;
   border-bottom: 1px solid #37464d;
+  z-index: 999;
 }
 
 nav ul li {
@@ -62,13 +65,13 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #fff !important;
   font-weight: 400;
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  color: rgb(100, 208, 255);
+  color: rgb(100, 208, 255) !important;
 }
 
 .section-header {
@@ -78,22 +81,41 @@ nav ul li a:hover {
 }
 
 .section-title {
-  width: 300px;
+  text-align: center;
   height: 60px;
-  margin: 0px auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px 0px;
   border-bottom: 2px solid #37464d;
+}
+
+.section-description {
+  width: 50%;
+  margin: 0px auto;
 }
 
 #knowledge,
 #projects,
 #about {
   padding-top: 80px;
+  width: 80%;
+  margin: 0px auto;
 }
 
 #about {
-  height: 1000px;
+  height: 800px;
+}
+
+@media screen and (min-width: 1025px) {
+  #knowledge,
+  #projects,
+  #about {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .image-knowledge {
+    margin: 40px 10px;
+  }
 }
 
 .flex-section {
@@ -119,6 +141,8 @@ nav ul li a:hover {
 }
 
 .about-content {
+  width: 500px;
+  margin: 0px auto;
   color: #fff;
-  text-align: center;
+  text-align: justify;
 }
